@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="expires" content="0">
+<META NAME='KEYWORDS' CONTENT='Australia, Share, Stock Market, Value, Investment'>
+<meta name="description" content="Australian Value Industry Shares for value investors">
+<title>Australian Value Industry Shares for Value Investing - DW InfoServer</title>
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <!-- make sure the JQuery has to be on the top -->
+    
+
+    
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script src= "http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+<script src= "http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular-aria.js"></script>
+  <!-- script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.2/css/foundation.css">
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.2/js/foundation.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+  
+  <link rel="stylesheet" href="https://rawgit.com/esvit/ng-table/master/dist/ng-table.min.css">
+<script src="https://rawgit.com/esvit/ng-table/master/dist/ng-table.min.js"></script>
+<script src="http://www.dwinfoserver.com/shares/dirPagination.js"></script>
+<link rel="stylesheet" href="http://www.dwinfoserver.com/shares/style.css">
+<script src="http://www.dwinfoserver.com/shares/myscript.js"></script>
+
+    <!-- ajax autocomplete -->
+<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.1/themes/base/minified/jquery-ui.min.css" type="text/css" /> 
+<!-- script src="//code.jquery.com/jquery-1.10.2.js"></script -->
+
+
+</head>
+
+
+<body><a name="top"></a>
+<nav class="topdwen top-bar" data-topbar>
+  <ul class="title-area">
+    <li class="name">
+      <h1><a href="#">Australian Value Shares for Value Investors</a></h1>
+    </li>
+    <!-- Collapsible Button on small screens: remove the .menu-icon class to get rid of icon. 
+    Remove the "Menu" text if you only want to show the icon -->
+    <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+  </ul>
+
+  <section class="top-bar-section">
+    <ul class="right">
+      <li class="ind"><a href="http://www.dwinfoserver.com">Home</a></li>
+      <li class="active"><a href="http://www.dwinfoserver.com/shares/index.php">Industry</a></li>
+      <li class="mining"><a href="http://www.dwinfoserver.com/shares/mining.php">Mining</a></li>
+   
+    </ul>
+  </section>
+</nav>
+
+
+
+
+ <div class="table-responsive container"> 
+
+
+    
+    <form action='' method='post' class="form-inline">
+		<label>Company:</label><input type='text' name='SecurityDescription' value='' class='auto'>
+	</form>
+   
+
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/ui/1.10.1/jquery-ui.min.js"></script>	
+<script type="text/javascript">
+$(function() {
+//autocomplete
+	$(".auto").autocomplete({
+        source: "json-auto.php",
+        minLength: 1
+	});				
+});
+</script>
+
+
+  <div class="corner-ribbon bottom-left sticky red shadow"><strong>Share Investors</strong></div>
+  <p>&nbsp;</p>
+  
+<div id="footer">
+        Managed by: davidwen.net
+</div>
+
+  <!-- Initialize Foundation JS -->
+<script>
+$(document).ready(function() {
+    $(document).foundation();
+})
+</script>
+</body>
+
+</html>
